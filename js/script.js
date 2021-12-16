@@ -1,23 +1,14 @@
-let navbar = document.querySelector(' .menu');
-document.querySelector('#menu-btn').onclick= () =>{
+let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-bar').onclick = () =>{
     navbar.classList.add('active');
 }
-document.querySelector('#close-menu').onclick = () =>{
+document.querySelector('#nav-close').onclick = () =>{
     navbar.classList.remove('active');
 }
-
-let searchBar = document.querySelector('.search-bar');
-document.querySelector('#search-btn').onclick = () =>{
-    searchBar.classList.add('active');
-}
-document.querySelector('#search-close').onclick = () =>{
-    searchBar.classList.remove('active');
-}
-
-
 window.onscroll = () =>{
     navbar.classList.remove('active');
-    searchBar.classList.remove('active');
+    search.classList.remove('active');
 
     if(window.scrollY > 0){
         document.querySelector('.header').classList.add('active');
@@ -26,12 +17,53 @@ window.onscroll = () =>{
 
     }
 
+}
+window.onload = () =>{
+   
+
+    if(window.scrollY > 0){
+        document.querySelector('.header').classList.add('active');
+    }else{
+        document.querySelector('.header').classList.remove('active');
+
+    }
 
 }
+let search = document.querySelector('.search-form');
 
-<script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    })
-</script>
+document.querySelector('#search-btn').onclick = () =>{
+    search.classList.add('active');
+}
+document.querySelector('#search-close').onclick = () =>{
+    search.classList.remove('active');
+}
+
+var swiper = new Swiper(".home-slider", {
+    loop:true,
+    grabCursor:true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  var swiper = new Swiper(".product-slider", {
+    loop:true,
+    grabCursor:true,
+    spaceBetween:20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+          
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      },
+  });

@@ -1,140 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="/Untitled-2.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./images/home-bg-1.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
-    <!-- font awesome -->
+    <title>complete responsive adventure & tour website desing</title>
+
+    <!-- custum css link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- fontawoseme link/ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- custume css link  -->
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- google fonts -->
 
-    <!-- lightbox  -->
-    <link href="path/to/lightbox.css" rel="stylesheet" />
-
-    
 </head>
 <body>
-   
-<section class="home">
-    <header class="header">
 
-    <h2 class="logo">ketangawade</h2>
+<!-- header section starts -->
 
-    <div class="menu">
-        <div id="close-menu" class="fas fa-times"></div>
+<header class="header">
+
+    <a href="" class="logo"><i class="fas fa-hiking"></i>TRAVEL </a>
+
+    <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
         <a href="#home">home</a>
         <a href="#about">about</a>
-        <a href="#portfolio">portfolio</a>
-        <a href="#projects">projects</a>
-        <a href="#contact">contact</a>
-
-
-    </div>
+        <a href="#shop">shop</a>
+        <a href="#packages">packages</a>
+        <a href="#reviews">reviews</a>
+        <a href="#blogs">blogs</a>
+    </nav>
 
     <div class="icons">
-        <a  id="menu-btn" class="fas fa-bars"></a>
-        <a  id="search-btn" class="fas fa-search"></a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <div id="search-btn" class="fas fa-search"></div>
     </div>
-    </header>
-  
-    <div class="search-bar" id="search">
 
-            <form action="">
-                <div id="search-close" class="fas fa-times">
-                   
+</header>
+<!-- header section end -->
+ 
+<!-- search form  -->
+<div class="search-form"> 
+
+    <div id="search-close" class="fas fa-times"></div>
+    <form action="">
+        
+
+        <input type="search" placeholder="search here...." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+</div>
+
+<!-- home section start  -->
+<section class="home" id="home">
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box" style="background: url(./images/home-bg-1.jpg) no-repeat; ">
+                <div class="content">
+                    <span>never stop</span>
+                    <h3>exploring</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facilis dignissimos quidem harum laudantium, iusto modi ea animi delectus autem.</p>
+                    <a href="#" class="btn">get started</a>
                 </div>
-                <input type="search" placeholder="search here....." id="search-bar">
-                <label for="search-bar" class="fas fa-search"></label>
-            </form>
-       
-    
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box second" style="background: url(./images/home-bg-2.jpg) no-repeat; ">
+                <div class="content">
+                    <span>make tour</span>
+                    <h3>amazing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facilis dignissimos quidem harum laudantium, iusto modi ea animi delectus autem.</p>
+                    <a href="#" class="btn">get started</a>
+                </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box" style="background: url(./images/home-bg-3.jpg) no-repeat; ">
+                <div class="content">
+                    <span>explore the</span>
+                    <h3>now world</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facilis dignissimos quidem harum laudantium, iusto modi ea animi delectus autem.</p>
+                    <a href="#" class="btn">get started</a>
+                </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
     </div>
+</section> 
 
-    <div class="home-content" id="home">
-        <h3>hii, am a</h3>
-        <h1>Webdeveloper & graphic desiner</h1>
-        <div class="bottons">
-            <a href="#" class="btn">hire me</a>
-            <a href="#" class="btn">about me</a>
+<!-- home section End    -->
+<!-- category section start   -->
+
+<section class="category">
+    <h1 class="heading">adventure idea! </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="./images/category-1.jpg" alt="">
+            <h3>bungee jump</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, quidem!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="./images/category-2.jpg" alt="">
+            <h3>zip lines</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, quidem!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="./images/category-2.jpg" alt="">
+            <h3>bungee jump</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, quidem!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="./images/category-4.jpg" alt="">
+            <h3>kayaking</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, quidem!</p>
+            <a href="#" class="btn">read more</a>
         </div>
     </div>
-
-
 </section>
+<!-- category section start   -->
 
-<section class="about section" id="about">
-    <div class="head"><h2 class="hedline">about</h2>
-   
-    </div>
-   <div class="content">
-    <div class="image">
-        <img src=".//img/bg.jpg" alt="" width="400">
-    </div>
-    <div class="content-box">
-        <h2 class="hedline-2">objective</h2>
-        <p>"to secure employment with a reputable organisation to fully utilize my traning and interpersonal skills to help contribute to the profit of the company and expand my knowledge."</p>
+<!-- about section start CVVV -->
 
-        
-        <a href="#" class="btn">download cV</a>
-           
-    
 
-    </div>
-    
-
-   </div>
-   
-</section>
-
-<section class="section project" id="projects">
-    <h2 class="hedline">project</h2>
-
-    <div class="grphics">
-        <img src="./img/1.jpg" width="300" alt="">
-        <img src="./img/2.png" width="300" alt="">
-        <img src="./img/3.png" width="300" data-lightbox="roadtrip" alt="">
-        <img src="./img/4.jpg" width="300" data-lightbox="roadtrip" alt="">
-        <img src="./img/5.jpg" width="300" data-lightbox="roadtrip" height="200" alt="">
-        <img src="./img/6.jpg" width="300" data-lightbox="roadtrip" height="200" alt="">
-        <img src="./img/7.png" width="300" data-lightbox="roadtrip" alt="">
-        <img src="./img/8.jpg" width="300" data-lightbox="roadtrip" alt="">
-        <img src="./img/9.png" width="300" data-lightbox="roadtrip" alt="">
-        <img src="./img/10.png" width="300" data-lightbox="roadtrip" alt="">
-        <img src="./img/11.jpg" width="300"  data-lightbox="roadtrip"alt="">
-        <img src="./img/12.png" width="300" data-lightbox="roadtrip" alt="">
-        <img src="./img/13.png" width="300" alt="">
-        <img src="./img/14.jpg" width="300" alt="">
-        <img src="./img/15.jpg" width="300" alt="">
-        <img src="./img/16.jpg" width="300" alt="">
-        <img src="./img/17.png" width="300" alt="">
-        <img src="./img/18.png" width="300" alt="">
-        <img src="./img/19.png" width="300" alt="">
-        
-    </div>
-    <div class="websites"></div>
+<section class="about" id="about">
+<div class="image">
+    <img src="images/about-img.jpg" alt="">
+</div>
+ <div class="content">
+     <h3>memorable outdoor experiences</h3>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed beatae officia, dicta iure illum fugit facere earum deserunt? Vitae odit et mollitia saepe blanditiis quidem sit facere veritatis voluptates!</p>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quod libero ad soluta dolores dolor porro animi quisquam earum omnis? </p>
+     <a href="#" class="btn">read me</a>
+ </div>
 </section>
 
 
-    <!-- js script link  -->
-    <!-- js content deliver network -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.jss"></script>
 
-    <!-- custum js link  -->
+
+<!-- about section End -->
+
+<!-- aection shop -->
+
+<section class="shop" id="shop">
+    <h1 class="heading">feature product</h1>
+    <div class=" swiper product-slider">
+        <div class="  swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./images/product-1.jpg" alt="">
+                    <div class="icons">
+                        <a href="" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div> 
+                <div class="content">
+                    <h3>survival kits</h3>
+                    <div class="price">$5.00 - $25.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./images/product-2.jpg" alt="">
+                    <div class="icons">
+                        <a href="" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>survival kits</h3>
+                    <div class="price">$5.00 - $25.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./images/product-3.jpg" alt="">
+                    <div class="icons">
+                        <a href="" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>survival kits</h3>
+                    <div class="price">$5.00 - $25.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./images/product-4.jpg" alt="">
+                    <div class="icons">
+                        <a href="" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>survival kits</h3>
+                    <div class="price">$5.00 - $25.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./images/product-5.jpg" alt="">
+                    <div class="icons">
+                        <a href="" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>survival kits</h3>
+                    <div class="price">$5.00 - $25.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./images/product-6.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>survival kits</h3>
+                    <div class="price">$5.00 - $25.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    </div>
+</section>
+<!-- aection shop -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script></script> -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custum js link -->
     <script src="js/script.js"></script>
 
-
-    <!-- lightbox -->
-    <script src="path/to/lightbox.js"></script>
-    <script>
-        lightbox.option({
-          'resizeDuration': 200,
-          'wrapAround': true
-        })
-    </script>
-
+    <!-- js content deliver network -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.jss"></script>
 </body>
 </html>
